@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/event-sourcing-core",
+    "description": "High-throughput event sourcing store with atomic append-only log, automated snapshotting, and asynchronous projections.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\EventStream\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\EventStream\\PackageServiceProvider"
+            ]
+        }
+    }
+}
